@@ -9,27 +9,30 @@ public class ArrayExercises {
     Scanner sc = new Scanner(System.in);
 
     for(int i = 0; i < SIZE; i++) {
-      System.out.println("Please enter 5 values for the Array ");
+      System.out.println("Please enter " + (i + 1) + " values for the Array ");
       anArray [i] = sc.nextInt();
 
     }
-
     System.out.println(Arrays.toString(anArray));
     System.out.println(Arrays.toString(reverseArray(anArray)));
-  }
+    System.out.println(Arrays.toString(reverseArray2(anArray)));
 
+  }
 
   public static int[] reverseArray(int[] data) {
     int[] output = new int[data.length];
     for(int i = 0; i < data.length; i++) {
-      output[i] = data[(data.length - 1) - i];
+      output[i] = data[data.length - 1 - i];
     }
     return output;
   }
 
-
-
   public static int[] reverseArray2(int[] data) {
+    for(int i = 0; i < data.length / 2; i++) {
+       int temp = data[i];
+       data[i] = data[data.length - 1 - i];
+       data[data.length - 1 - i] = temp;
+    }
     return data;
 
   }
