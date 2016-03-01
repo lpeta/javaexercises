@@ -1,33 +1,49 @@
+import java.util.Scanner;
+import java.util.Arrays;
 
-/**
- * Write a description of class ArrayExercises here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class ArrayExercises
-{
-    // instance variables - replace the example below with your own
-    private int x;
+public class ArrayExercises {
+  public static void main(String[] args) {
+    final int SIZE = 5;
+    int[] anArray = new int[5];
 
-    /**
-     * Constructor for objects of class ArrayExercises
-     */
-    public ArrayExercises()
-    {
-        // initialise instance variables
-        x = 0;
+    Scanner sc = new Scanner(System.in);
+
+    for(int i = 0; i < SIZE; i++) {
+      System.out.println("Please enter 5 values for the Array ");
+      anArray [i] = sc.nextInt();
+
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    System.out.println(Arrays.toString(anArray));
+    System.out.println(Arrays.toString(reverseArray(anArray)));
+  }
+
+
+  public static int[] reverseArray(int[] data) {
+    int[] output = new int[data.length];
+    for(int i = 0; i < data.length; i++) {
+      output[i] = data[(data.length - 1) - i];
     }
+    return output;
+  }
+
+
+
+  public static int[] reverseArray2(int[] data) {
+    return data;
+
+  }
+
+  public static int[] arraySum(int[] data) {
+    return data;
+
+
+  }
+
+  public static int[] altSum(int[] data) {
+    return data;
+
+  }
+
+
 }
