@@ -57,10 +57,10 @@ public class ArrayExercises {
 
     for(int i = 0; i < data.length; i++) {
       if(data[i] % 2 == 0) {
-        output += data[i];
+        output -= data[i];
       }
       else {
-        output -= data[i];
+        output += data[i];
       }
     }
 
