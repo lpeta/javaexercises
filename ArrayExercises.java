@@ -12,11 +12,11 @@ public class ArrayExercises {
       anArray [i] = sc.nextInt();
     }
 
-    System.out.println(Arrays.toString(anArray));
-    System.out.println(Arrays.toString(reverseArray(anArray)));
-    System.out.println(Arrays.toString(reverseArray2(anArray)));
-    System.out.println(arraySum(anArray));
-    System.out.println(altSum(anArray));
+    System.out.println("The array values is: " + (Arrays.toString(anArray)));
+    System.out.println( "The Reverse array is: " + (Arrays.toString(reverseArray(anArray))));
+    System.out.println( "The Reverse array 2 is: " + (Arrays.toString(reverseArray2(anArray))));
+    System.out.println( "The array Sum is: " + (arraySum(anArray)));
+    System.out.println( "The array Alt sum is: " + (altSum(anArray)));
   }
 
   public static int[] reverseArray(int[] data) {
