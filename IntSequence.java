@@ -34,7 +34,7 @@ public class IntSequence
       }
     }
 
-    div = ((double)max + (double)min) / (double)num;
+    div = ((double)max + (double)min) / num;
 
     System.out.println("The number of values entered is: " + num);
     System.out.println("The largest value is: " + max);
